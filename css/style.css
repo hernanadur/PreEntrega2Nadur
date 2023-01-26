@@ -119,7 +119,7 @@ fieldset input{
 @media screen and (min-width: 320px){
     
     button{
-        position:fixed; bottom: 0px; left: 320px;
+        position:fixed; bottom: 0px; left: 250px;
         padding: 2px;
     }
 
