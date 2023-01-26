@@ -116,6 +116,17 @@ fieldset input{
 }
 
 
+@media screen and (min-width: 320px){
+    
+    button{
+        position:fixed; bottom: 0px; left: 320px;
+        padding: 2px;
+    }
+
+    main div section div iframe{
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px) {
 
