@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GESM NOSOTROS</title>
 </head>
 <body>
@@ -25,9 +27,9 @@
         </div>
 
         <div class="col12">
-            <ul class="d-flex justify-content-around align-items-center">   
+            <ul class="d-flex flex-column p-2 mb-auto flex-sm-row justify-content-md-around align-items-center">   
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="">NOSOTROS</a></li> 
+                <li><a href="./nosotros.html">NOSOTROS</a></li> 
                 <li><a href="./cursos.html">CURSOS</a></li> 
                 <li><a href="./galeria.html">GALERIA</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li> 
@@ -40,14 +42,21 @@
 <main class="container-fluid">
     <div class="row">
         <section>
-            <h1 class="titulosGrande">QUIENES SOMOS</h1>
+            <h1 class="titulosGrande animate__animated animate__backInDown">QUIENES SOMOS</h1>
 
                 <h2 class="h3">TALBO LOBO</h2>
 
-                <img src="../assets/images/presentacion2.jpeg" alt="talbo2">
-                <img src="../assets/images/presentacion.jpeg" alt="talbo">
-                <img src="../assets/images/presentacion3.jpeg" alt="talbo3">
-        
+                <div    data-aos="flip-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="4000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                    <img src="../assets/images/presentacion2.jpeg" alt="talbo2">
+                    <img src="../assets/images/presentacion.jpeg" alt="talbo">
+                    <img src="../assets/images/presentacion3.jpeg" alt="talbo3">
+                </div>
 
                 <h3 class="h4">Instructor de SUPERVIVENCIA y Guía de Montaña.<br>
                     Técnico en Supervivencia.<br>
@@ -76,9 +85,17 @@
             Cada Cuartel de la provincia de Córdoba, Integrante de la Brigada Naranja,  elegía a los mejores bomberos,
             los cuales fuimos convocados a distintas catástrofes dentro y fuera del país.</p>
 
-            <img src="../assets/images/presentacion4.jpeg" alt="talbo4">
-            <img src="../assets/images/presentacion5.jpeg" alt="talbo5">
-            <img src="../assets/images/presentacion6.jpeg" alt="talbo6">
+            <div    data-aos="flip-down"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="4000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                <img src="../assets/images/presentacion4.jpeg" alt="talbo4">
+                <img src="../assets/images/presentacion5.jpeg" alt="talbo5">
+                <img src="../assets/images/presentacion6.jpeg" alt="talbo6">
+            </div>
                 
             <p>Desde 1985, Primer Guía de Capilla del Monte, Córdoba, Argentina.<br>
             Así se iniciaron en Capilla del Monte las caminatas guiadas.
@@ -112,6 +129,10 @@
 
 </footer>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
